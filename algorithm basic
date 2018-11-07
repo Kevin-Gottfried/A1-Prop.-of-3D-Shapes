@@ -1,0 +1,12 @@
+Create a master class for a rectangular prism.
+Create an obj for a rectangular prism, triangular prism, cube and sq based pyramid.
+Prompt user for len, width, height.
+  Cannot be zero, negative
+Calculate for surface area, volume:
+  Volume: 
+    Multiply measurements for R-P masterclass
+      Overload for SQ P, Cube, Triang P. 
+  Surface area:
+    Multiply every single combo of two side lens, multiply by two add.
+      Overload for SQ P, Cube, Triang P.
+Print out volume and SA.
