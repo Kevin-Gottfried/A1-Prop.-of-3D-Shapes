@@ -14,7 +14,7 @@ class Main {
     return len*width*ht;
   }
   public double findSurfArea(double a) {
-    return 2*l*w+
+    return 2*l*w+2*l*h*+2*w*h
   }
   public static char ChooseShape() {
     Scanner Reader = new Scanner(System.in);
@@ -54,4 +54,31 @@ class Main {
     char choice = ChooseShape();
 
   }
+}
+class Cube {
+    Form Cube = new Form;
+        public double findVol(double v) {
+          return h**3;
+        }
+        public double findSurfAr(double a) {
+          return 6*(l**2);
+}
+class Square_Based_Pyramid {
+    Form Square_Based_Pyramid = new Form;
+        public double findVol(double v) {
+          return (l*w*h)/3;
+        }
+        public double findSurfAr(double a) {
+          return l*w + 2*l*Math.sqrt((0.5*l)**2+h**2);
+}
+class Triangular_Prism {
+    Form Triangular_Prism = new Form;
+        public double findVol(double v) {
+          return (l*w*h)/2;
+        }
+        public double findSurfAr(double a) {
+          return l*w + w*h + h*l + h*Math.sqrt(l**2 + w**2);
+}
+}
+}
 }
