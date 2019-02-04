@@ -28,7 +28,7 @@ class Main {
   }
   public static char ChooseShape() {
     Scanner reader = new Scanner(System.in);
-    System.out.print("What is the shape you want? \n[a] Rectangular Prism? \n[b] Cube? \n[c] Square Pyramid? \n[d] Triangular Prism?");
+    System.out.print("What is the shape you want? \n[a] Rectangular Prism? \n[b] Cube? \n[c] Square Pyramid? \n[d] Triangular Prism? \n");
 
     return reader.next().charAt(0);
     //System.out.println(Shape);
@@ -56,8 +56,10 @@ class Main {
     char choice=ChooseShape();
     if (choice == 'a') {   
          Main RP = new Main();
+         RP.UserInput();
          RP.v = RP.findVol();
          RP.a = RP.findSurfAr();
+         RP.output();
 
         //create the object for rect. prism
         //assign values to variables 
@@ -66,18 +68,24 @@ class Main {
         else if (choice == 'b') {
           // Cube.areaCalc() {}
           Cube c1 = new Cube();
+          c1.UserInput();
           c1.a = c1.findSurfAr();
           c1.v = c1.findVol();
+          c1.output();
         }
         else if (choice == 'c') {
           TriPrm TPsm = new TriPrm();
+          TPsm.UserInput();
           TPsm.v=TPsm.findVol();
           TPsm.a=TPsm.findSurfAr();
+          TPsm.output();
         }
         else if (choice == 'd') {
           SQP SQP1 = new SQP();
+          SQP1.UserInput();
           SQP1.v=SQP1.findVol();
           SQP1.a=SQP1.findSurfAr();
+          SQP1.output();
         }
         else {
           System.out.println("Please choose a shape representing letter!");
